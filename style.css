@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/fonts/Gilroy-Light.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/fonts/Gilroy-Semibold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/fonts/Gilroy-Regular.ttf');
+    font-weight: 400;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+main
+{
+    width: 100%;
+}
+.heading
+{
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #7d7d7d;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+form
+{
+    width: 40%;
+    display: flex;
+    gap: 10px;
+}
+form input
+{
+    border-radius: 12px;
+    border: 2px solid #7d7d7d;
+    width: 60%;
+    padding: 10px 50px 10px 8px;
+    outline: none;
+    transition: .45s ease;
+}
+form input:focus
+{
+    outline: 1px solid #007fff;
+    box-shadow: 0 0 10px #44a0fc;
+}
+form button
+{
+    cursor: pointer;
+    color: white;
+    background-color: #007fff;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 50px;
+}
+.heading h2
+{
+    font-weight: 700;
+    font-size: 50px;
+}
+.main 
+{
+    display: flex;
+    gap: 20px;
+    width: 98%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.main .box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: .5s ease;
+    padding: 15px;
+    border-radius: 10px;
+    width: 20%;
+    border: 1px solid #007fff;
+    background-color: #f0f0f0;
+}
+.main .box input
+{
+    display: none;
+    opacity: 1;
+    background-color: transparent;
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.main .box span
+{
+    font-size: 12px;
+}
+.main .box img
+{
+    cursor: pointer;
+}
+.main .box img:nth-child(2)
+{
+    transition: .2s ease;
+}
+.disabled 
+{
+    opacity: .4;
+    cursor: default;
+    background-color: gray;
+}
+.finder
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.actions
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+.actions img
+{
+    width: 18px;
+    height: 18px;
+}
+.info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    justify-content: space-between;
+}
+.done {
+    text-decoration: line-through;
+}
+.nope {
+    text-decoration: none;
+}
